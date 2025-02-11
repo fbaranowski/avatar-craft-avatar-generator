@@ -10,9 +10,6 @@ services:
       - .env
     networks:
       - avatar-generator-network
-      - crud-network
 
 networks:
   avatar-generator-network:
-
-  crud-network:
