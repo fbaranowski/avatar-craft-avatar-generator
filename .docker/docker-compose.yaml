@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  avatar-generator:
+    build:
+      context: ..
+      dockerfile: .docker/Dockerfile
+    ports:
+      - "8200:8200"
+    env_file:
+      - .env
+    networks:
+      - avatar-generator-network
+
+networks:
+  avatar-generator-network:
